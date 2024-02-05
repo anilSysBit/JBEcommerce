@@ -32,17 +32,18 @@ const Navigation = () => {
             {/* Navigation Search Bar Main */}
             <div className="main_navigation">
                 <div className="navs logobox">
-                    <img src={DarazBigLogo} alt="darazLogo" />
+                    <Link to="/"><img src={DarazBigLogo} alt="darazLogo" /></Link>
                 </div>
                 <div className="navs search_box">
                     <input type="text" placeholder='Search in Daraz' />
                 </div>
-               <div className="navs login">
-                <Link><p><PersonIcon/>Login</p></Link>
+               <div className="navs login_signup_nav">
+               <Link to="/login"><span className='login_nav'><p><PersonIcon/>Login</p></span></Link>
+               <Link to="/signup"><span className='signup_nav'><p>Signup</p></span></Link>
+
                </div>
-               <div className="navs signup">
-                <Link><p>Signup</p></Link>
-               </div>
+               {/* <div className="navs signup">
+               </div> */}
                 <div className="navs language">
                     <span><LanguageIcon/>EN</span>
                 </div>
