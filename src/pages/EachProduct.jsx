@@ -11,7 +11,7 @@ import { useCart} from "../Context/CartContext";
 
 const EachProduct = () => {
 
-    const {updateCartItems} = useCart()
+    const {updateCartItems,cartItems} = useCart();
 
     const [quantity,setQuantity] = useState(1);
 
@@ -118,7 +118,7 @@ const EachProduct = () => {
 
                 <div className="buy_and_cart_button">
                     <button className="buy_now">Buy Now</button>
-                    <button className="add_to_cart">Add to Cart</button>
+                    <button className="add_to_cart" onClick={()=>updateCartItems(cartItems+1)}>Add to Cart</button>
                 </div>
               </div>
               <div className="others_details"></div>
