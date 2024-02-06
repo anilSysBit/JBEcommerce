@@ -22,6 +22,7 @@ $nav-color:#f85606;
 $gb-font: 'Roboto', sans-serif;
 $gb-text:rgb(239, 239, 239);
 $gb-black-text:rgb(83, 83, 83);
+$blue-link:#1ab7dc;
 
 
 
@@ -474,4 +475,123 @@ input{
             }
         }
     }
+
+
+        // Each product Css
+
+        .each_product_container{
+            padding: 0px 100px 0px 100px;
+            .product_size_manager{
+                width: 100%;
+                .breadcrum_navigation{
+                    padding: 15px 0px;
+                    a{
+                        color: $blue-link;
+                        font-weight:lighter;
+                    }
+                }
+                .product_detail_body{
+                    background-color: white;
+                    width: 100%;
+                    .detail_body{
+                        padding: 20px;
+                        .detail_size_manager{
+                            display: flex;
+                            .img_container{
+                                // border: 2px solid black;
+                                width: 30%;
+                                padding: 20px;
+                            }
+                            .detail_container{
+                                width: 40%;
+                                // border: 2px solid green;
+                                padding: 20px;
+                                h4{
+                                    // font-size: 15px;
+                                    color: $gb-black-text;
+                                }
+                                .pd_rating{
+                                    margin-top: 10px;
+                                    display: flex;
+                                    p{
+                                        font-size: 12px;
+                                        color:$blue-link;
+                                    }
+                                }
+                                .brand_info{
+                                    font-size: 13px;
+                                    color: $blue-link;
+                                    margin-top: 10px;
+                                    padding-bottom: 10px;
+                                }
+                                h2{
+                                    color: $nav-color;
+                                    margin-top: 10px;
+                                }
+                                .discount_price{
+                                    font-size: 13px;
+                                    span{
+                                        text-decoration: line-through;
+                                        margin-right: 20px;
+                                    }
+                                }
+                                .promotions{
+                                    margin-top: 20px;
+                                    display: flex;
+                                    p{
+                                        font-size: 15px;
+                                        span{
+                                            font-size: 12px;
+                                            background-color: $nav-color;
+                                            padding: 10px;
+                                            border-radius: 5px;
+                                            color: white;
+                                            margin-left: 40px;
+                                        }
+                                    }
+                                }
+                                .quantity{
+                                    margin-top: 40px;
+                                    display: flex;
+                                    place-items: center;
+                                    font-size: 15px;
+                                    column-gap: 5px;
+                                    color: $gb-black-text;
+                                    button{
+                                        height: 30px;
+                                        width: 30px;
+                                        background-color: rgb(202, 202, 202);
+                                    }
+                                    p{
+                                        font-size: 13px;
+                                    }
+                                }
+                                .buy_and_cart_button{
+                                    margin-top: 20px;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    button{
+                                        height: 40px;
+                                        width: 45%;
+                                        color: white;
+                                        cursor: pointer;
+                                    }
+                                    .buy_now{
+                                        
+                                        background-color: #2abbe8;
+                                    }
+                                    .add_to_cart{
+                                        background-color: $nav-color;
+                                    }
+                                }
+                            }
+                            .others_details{
+                                width: 30%;
+                                // border: 2px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }

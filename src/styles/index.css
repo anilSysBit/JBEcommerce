@@ -375,4 +375,115 @@ input:focus {
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+.daraz_homepage .each_product_container {
+  padding: 0px 100px 0px 100px;
+}
+.daraz_homepage .each_product_container .product_size_manager {
+  width: 100%;
+}
+.daraz_homepage .each_product_container .product_size_manager .breadcrum_navigation {
+  padding: 15px 0px;
+}
+.daraz_homepage .each_product_container .product_size_manager .breadcrum_navigation a {
+  color: #1ab7dc;
+  font-weight: lighter;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body {
+  background-color: white;
+  width: 100%;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body {
+  padding: 20px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager {
+  display: flex;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .img_container {
+  width: 30%;
+  padding: 20px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container {
+  width: 40%;
+  padding: 20px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container h4 {
+  color: rgb(83, 83, 83);
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .pd_rating {
+  margin-top: 10px;
+  display: flex;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .pd_rating p {
+  font-size: 12px;
+  color: #1ab7dc;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .brand_info {
+  font-size: 13px;
+  color: #1ab7dc;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container h2 {
+  color: #f85606;
+  margin-top: 10px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .discount_price {
+  font-size: 13px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .discount_price span {
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .promotions {
+  margin-top: 20px;
+  display: flex;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .promotions p {
+  font-size: 15px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .promotions p span {
+  font-size: 12px;
+  background-color: #f85606;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 40px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .quantity {
+  margin-top: 40px;
+  display: flex;
+  place-items: center;
+  font-size: 15px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  color: rgb(83, 83, 83);
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .quantity button {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(202, 202, 202);
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .quantity p {
+  font-size: 13px;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .buy_and_cart_button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .buy_and_cart_button button {
+  height: 40px;
+  width: 45%;
+  color: white;
+  cursor: pointer;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .buy_and_cart_button .buy_now {
+  background-color: #2abbe8;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .detail_container .buy_and_cart_button .add_to_cart {
+  background-color: #f85606;
+}
+.daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .others_details {
+  width: 30%;
 }/*# sourceMappingURL=index.css.map */
