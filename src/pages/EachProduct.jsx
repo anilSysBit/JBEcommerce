@@ -11,6 +11,8 @@ import { useCart} from "../Context/CartContext";
 
 const EachProduct = () => {
 
+    const {updateCartItems} = useCart()
+
     const [quantity,setQuantity] = useState(1);
 
   const productDetail = {

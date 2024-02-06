@@ -10,11 +10,11 @@ import LanguageIcon from "@mui/icons-material/Language";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 // import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Badge  from "@mui/material/Badge";
-// import { useCart } from "../../Context/CartContext";
+import { useCart } from "../../Context/CartContext";
 
 const Navigation = () => {
 
-  // const {cartItems} = useCart();
+  const {cartItems} = useCart();
   return (
     <div className="navigation_main">
       <div className="navigation_size_manager">
