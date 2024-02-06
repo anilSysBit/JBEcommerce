@@ -6,6 +6,7 @@ import Navigation from './components/homepage/Navigation'
 import Homepage from './pages/Homepage'
 import Login from './pages/Login'
 import Signup from './pages/signup'
+import EachProduct from './pages/EachProduct'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Homepage/>} />
           <Route path="/login" element ={<Login/>} />
           <Route path="/signup" element ={<Signup/>} />
+          <Route path="/product1" element={<EachProduct/>} />
         </Routes>
       </BrowserRouter>
     </div>

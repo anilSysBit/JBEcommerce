@@ -1,4 +1,6 @@
+import { colors } from '@mui/material';
 import React,{useState,useEffect} from 'react'
+import {Link} from 'react-router-dom'
 
 const FlashSale = () => {
   const [timeLeft, setTimeLeft] = useState({});
@@ -103,7 +105,7 @@ const FlashSale = () => {
                         return(
                             <div className="products" key={index}>
                                 <img src={elem.imageSrc} alt={index} />
-                                <p className='product_name'>{elem.productName}</p>
+                                <Link to="/product1"><p className='product_name' style={{color:'black'}}>{elem.productName}</p></Link>
                                 <h4 className='price_tag'>Rs.{elem.discountPrice}</h4>
                                 <p><span className='underline_span'>Rs.{elem.actualPrice}</span> <span className='discount'>-{elem.discountPercentage}%</span></p>
                             </div>
