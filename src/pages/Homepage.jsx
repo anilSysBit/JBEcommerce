@@ -9,8 +9,7 @@ const Homepage = () => {
 
 
     let settings ={
-        dots: false,
-        arrows:false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,

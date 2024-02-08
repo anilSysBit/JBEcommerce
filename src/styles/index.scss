@@ -13,6 +13,7 @@
 
 body{
     background-color: #f5f5f5;
+    min-width: 1500px;
 }
 
 // :root{
@@ -44,10 +45,14 @@ input{
 
 .daraz_homepage{
     // Navigation
+    position: relative;
     .navigation_main{
         padding: 0px 100px 0px 100px;
         height: 100px;
         background-color: $nav-color;
+        position: sticky;
+        top: 0;
+        z-index: 100;
         .navigation_size_manager{
 
 
@@ -178,12 +183,6 @@ input{
                     border-radius: 10px;
                     width: 75%;
                     overflow: hidden;
-
-                    .slick-slider{
-                    }
-                   .slick-slide{
-
-                   }
 
                 }
             }
@@ -595,3 +594,53 @@ input{
             }
         }
 }
+
+
+/* styles.scss */
+.slider-container {
+    position: relative;
+  
+    .slick-slider {
+      margin: 0 auto;
+      width: 80%; // adjust width as needed
+  
+      .slick-slide img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .slick-dots {
+        position: absolute;
+        bottom: 30px; // adjust position as needed
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        z-index: 10;
+  
+        li {
+          display: inline-block;
+          margin: 0 5px;
+  
+          button {
+            font-size: 18px; // adjust font size as needed
+            width: 20px; // adjust dot size as needed
+            height: 20px; // adjust dot size as needed
+            border-radius: 50%; // make dots circular
+            color: white; // color of the dot
+  
+            &:before {
+              font-size: 20px; // adjust size as needed
+            }
+          }
+  
+          &.slick-active {
+            button:before {
+              opacity: 0.75;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -11,6 +11,7 @@
 
 body {
   background-color: #f5f5f5;
+  min-width: 1500px;
 }
 
 button {
@@ -27,10 +28,16 @@ input:focus {
   outline: none;
 }
 
+.daraz_homepage {
+  position: relative;
+}
 .daraz_homepage .navigation_main {
   padding: 0px 100px 0px 100px;
   height: 100px;
   background-color: #f85606;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .daraz_homepage .navigation_main .navigation_size_manager .top_navigation {
   display: flex;
@@ -486,4 +493,43 @@ input:focus {
 }
 .daraz_homepage .each_product_container .product_size_manager .product_detail_body .detail_body .detail_size_manager .others_details {
   width: 30%;
+}
+
+/* styles.scss */
+.slider-container {
+  position: relative;
+}
+.slider-container .slick-slider {
+  margin: 0 auto;
+  width: 80%;
+}
+.slider-container .slick-slider .slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.slider-container .slick-slider .slick-dots {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  z-index: 10;
+}
+.slider-container .slick-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.slider-container .slick-slider .slick-dots li button {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+}
+.slider-container .slick-slider .slick-dots li button:before {
+  font-size: 20px;
+}
+.slider-container .slick-slider .slick-dots li.slick-active button:before {
+  opacity: 0.75;
 }/*# sourceMappingURL=index.css.map */
